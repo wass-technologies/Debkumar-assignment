@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+            </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Salon</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,12 +25,7 @@
             </ul>
             <div class="right-section">
                 <a href="#contact" class="contact-btn">Contact Us</a>
-                    <div class="grid-icon">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
+                        <img src="./assets/images/Vector.png" width="22px" height="22px" alt="">
             </div>
         </nav>
     </header>
@@ -36,12 +35,17 @@
             <div class="hero-text">
                 <h1>Best Place For Your Herbal Treatment</h1>
                 <p>Experience the power of nature with our premium herbal treatments.</p>
-                <div class="search-bar">
-                    <input type="text" placeholder="Search treatments...">
+            
+                <div class="search-container">
+                    <div class="search-bar">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button class="search-button">Search</button>
+                    </div>
                     <button class="btn">Book Your Slot</button>
-                </div>
+                </div> 
             </div>
-            <img src="./assets/images/hero-removebg-preview.png" alt="Spa Treatment" class="hero-image"/>
+            <img src="./assets/images/hero img.png" alt="Spa Treatment" class="hero-image"/>
+            <img src="./assets/images/Ellipse 1.png" width="423.03px" height="384px" alt="" class="ellipse"/>
         </div>
     </section>
 
@@ -50,71 +54,73 @@
             <div class="icon-circle">
                 <img src="./assets/images/ft-removebg-preview.png" alt="Flower Treatment 1">
             </div>
-            <h3>Flower Treatment</h3>
-            <h3><a href="#book">Book Treatment →</a></h3>
+            <div class="Service-text">
+                <h3>Flower Treatment</h3>
+                <p><a href="#book"> Book Treatment</a></p>
+            </div>
             
         </div>
         <div class="service-icon">
             <div class="icon-circle">
                 <img src="./assets/images/ft2-removebg-preview.png" alt="Flower Treatment 2">
             </div>
-            <h3>Flower Treatment</h3>
-            <a href="#book">Book Treatment →</a>
+            <div class="Service-text">
+                <h3>Flower Treatment</h3>
+                <p><a href="#book">Book Treatment ></a></p>
+            </div>
         </div>
         <div class="service-icon">
             <div class="icon-circle">
                 <img src="./assets/images/ft3-removebg-preview.png" alt="Flower Treatment 3">
             </div>
-            <h3>Flower Treatment</h3>
-            <a href="#book">Book Treatment →</a>
+            <div class="Service-text">
+                <h3>Flower Treatment</h3>
+                <p><a href="#book">Book Treatment ></a></p>
+            </div>
         </div>
         <div class="service-icon">
             <div class="icon-circle">
                 <img src="./assets/images/ft4-removebg-preview.png" alt="Flower Treatment 4">
             </div>
-            <h3>Flower Treatment</h3>
-            <a href="#book">Book Treatment →</a>
+            <div class="Service-text">
+                <h3>Flower Treatment</h3>
+                <p><a href="#book">Book Treatment ></a></p>
+            </div>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <section class="combo-packages" >
-                <ul>
-                <img src="/assets/images/Group 15.png" alt="">
-                <h2>Our Combo Packages</h2>
-                </ul>
-
-            <div class="package-grid">
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="./assets/images/card 1.png" alt="Package 1" />
-                    </div>
-                        <div class="package-content">
-                        <h3>Change Colorful</h3>
-                        <p>Experience our signature color transformation package.</p>
-                    </div>
-                </div>
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="./assets/images/card 2.png" alt="Package 2" />
-                    </div>
-                    <div class="package-content">
-                        <h3>Change Colorful</h3>
-                        <p>Experience our signature color transformation package.</p>
-                    </div>
-                </div>
-                <div class="package-card">
-                    <div class="package-image">
-                        <img src="./assets/images/card 3.png" alt="Package 3" />
-                    </div>
-                    <div class="package-content">
-                        <h3>Change Colorful</h3>
-                        <p>Experience our signature color transformation package.</p>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="banner">
+            <img src="./assets/images/image 5.png" alt="Leaf" class="leaf left">
+            <div class="line"></div>
+            <span class="text">Our Combo Packages</span>
+            <div class="line"></div>
+            <img src="./assets/images/image 4.png" alt="Leaf" class="leaf right">
+            
+        </div>
+        <div class="package-wrapper">
+            
+            <div class="package">
+                <img src="./assets/images/card 1.png" alt="Blonde Hair Styling">
+                <h2>Change</h2>
+                <h1>Colorful</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo consequuntur quo ipsam eveniet ullam distinctio optio architecto quisquam incidunt voluptatibus.</p>
             </div>
-        </section>
-    </section>
+            <div class="package" style="background-color: rgba(255,255,255,0.1);">
+                <img src="./assets/images/card 2.png" alt="Pink Hair Coloring">
+                <h2>Change</h2>
+                <h1>Colorful</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores vero cupiditate nam illum fugit ea. Repudiandae, sapiente. Impedit, dolorum amet!</p>
+            </div>
+            <div class="package">
+                <img src="./assets/images/card 3.png" alt="Bridal Hair Styling">
+                <h2>Change</h2>
+                <h1>Colorful</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore a sunt nisi aliquid eum corporis nihil mollitia dolores repudiandae enim!</p>
+            </div>
+        </div>
+    </div>
+    
 
     <section class="pricing" id="pricing">
         <div class="pricing-container">
@@ -122,42 +128,42 @@
             <div class="pricing-grid">
                 <div class="pricing-item">
                     <div>
-                        <h3>Ombré Color</h3>
+                        <h3>Ombre Color</h3>
                         <p>We have a passion for promoting healthy hair.</p>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="pricing-item">
                     <div>
-                        <h3>Ombré Color</h3>
+                        <h3>Ombre Color</h3>
                         <p>We have a passion for promoting healthy hair.</p>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="pricing-item">
                     <div>
-                        <h3>Ombré Color</h3>
+                        <h3>Ombre Color</h3>
                         <p>We have a passion for promoting healthy hair.</p>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="pricing-item">
                     <div>
-                        <h3>Ombré Color</h3>
+                        <h3>Ombre Color</h3>
                         <p>We have a passion for promoting healthy hair.</p>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="pricing-item">
                     <div>
-                        <h3>Ombré Color</h3>
+                        <h3>Ombre Color</h3>
                         <p>We have a passion for promoting healthy hair.</p>
                     </div>
                     <i class="fas fa-arrow-right"></i>
                 </div>
                 <div class="pricing-item">
                     <div>
-                        <h3>Ombré Color</h3>
+                        <h3>Ombre Color</h3>
                         <p>We have a passion for promoting healthy hair.</p>
                     </div>
                     <i class="fas fa-arrow-right"></i>
