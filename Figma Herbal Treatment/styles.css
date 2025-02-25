@@ -176,7 +176,7 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.search-bar {
+.herosearch-bar {
     display: flex;
     gap: 1rem;
     margin-top: 2rem;
@@ -189,8 +189,8 @@ body {
     border: 2px solid #4a235a;
 }
 
-.search-input {
-   
+.herosearch-input {
+   width: 260px;
     flex: 1;
     border: none;
     padding: 10px;
@@ -198,47 +198,48 @@ body {
     outline: none;
 }
 
-.search-button {
+.herosearch-button {
     background-color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 15px 0px;
     font-size: 16px;
     cursor: pointer;
     color: #4a235a;
     border-left: 1px solid #9b59b6;
 }
 
-.search-button:hover {
-    background-color: #ccabf8;
+.herosearch-button:hover {
+    background-color: #9c90ab;
 }
 
-.search-bar input {
+.herosearch-bar input {
     flex: 1;
     padding: 1rem;
     border: none;
     border-radius: 4px;
     background: #ffffff;
-    /* color: var(--text-dark); */
+    color:black
 }
-.search-container {
+.herosearch-container {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.btn {
+.btn-hero {
     width: 350px;
     height: 50px;
     margin-top: 33px;
     padding: 1rem 2rem;
-    background: #B30DA2;            
+    background: #B30DA2;
+    color: white;            
     border: none;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.3s ease;
 }
 
-.btn:hover {
+.btn-hero:hover {
     transform: translateY(-2px);
 }
 
@@ -247,8 +248,22 @@ body {
     justify-content: space-evenly;
     padding-left: 50px;
     background: linear-gradient(to bottom, #0c050e, #070308);
-    
+    /* background-image: url(./assets/images/image6.png); */
 }
+/* .bg-image{
+    border: 10px solid rgb(142, 41, 41);
+    padding: 35px;
+    background-image: url(./assets/images/image6.png);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    width: 400px;
+    height: 549px;
+    top: 1003.21px;
+    left: 633.77px;
+    angle: -131.14 deg;
+    opacity: 10%;
+
+} */
 
 .service-icon {
     display: flex;
@@ -319,9 +334,10 @@ body {
     align-items: center;
     align-content: center;
     /* gap: 10px; */
-    margin-top: 100px;
-    margin-left: 450px;
-    padding: 30px;
+    margin-top: 20px;
+    margin-left: 350px;
+    padding: 20px;
+    margin-bottom: 100px;
 }
 
 .text {
@@ -346,7 +362,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 70px;
-    margin-top: -50px;
+    margin-top: -70px;
 
     
 }
@@ -381,15 +397,15 @@ body {
 }
 .package h2 {
     font-weight: 400;
-    font-size: 2.2rem;
+    font-size: 60px;
     font-style: italic;
-    margin-top: 10px;
+    margin-top: 20px;
     text-align: center;
     font-family: Palace Script MT;
 }
 .package h1 {
     font-size: 2.2rem;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: center;
     font-weight: 300;
 }
@@ -398,6 +414,7 @@ body {
     font-size: 0.7rem;
     width: 80%;
     margin: auto;
+    margin-bottom: 10px;
 
 }
 
@@ -415,13 +432,13 @@ body {
 }
 .package1 img {
     width: 100%;
-    height: auto;
+    height: 100%;
     display: block;
     object-fit: cover;
     border-radius: 10px;
 }
-.overlay {
-    position: relative;
+.overlay1 {
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -436,17 +453,17 @@ body {
     color: white;
     padding: 20px;
 }
-.overlay h2 {
+.overlay1 h2 {
     font-family: Palace Script MT;
-    font-size: 30px;
+    font-size: 60px;
     font-weight: 400;
 }
-.overlay h1 {
-    font-size: 40px;
-    font-weight: 700;
+.overlay1 h1 {
+    font-size: 2.9rem;
+    font-weight: 300;
     font-family: "Ovo", serif;
 }
-.overlay p {
+.overlay1 p {
     font-size: 0.9rem;
     margin-top: 10px;
     line-height: 1.4;
@@ -471,8 +488,6 @@ body {
     justify-content: center;
     
 }
-
-/* Overlay on Background */
 .pricing::before {
     content: "";
     position: absolute;
@@ -483,13 +498,11 @@ body {
     left: 0;
 }
 
-/* Title Section */
 .pricing-title {
     text-align: center;
     font-size: 1.8rem;
     color: white;
     position: relative;
-    /* z-index: 2; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -502,14 +515,46 @@ body {
     font-weight: 500;
     
 }
-.banner{
+/* .banner1{
+    align-items: center;
+    text-align: center;
     position: relative;
-    top: -120px;
+    top: -80px;
     right: 90px;
     bottom: 20px;
+    
 }
-.text{
+.text1{
     font-size: 25px;
+} */
+.banner1 {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    position: relative;
+    /* gap: 10px; */
+    /* margin-top: 20px; */
+    margin-left: 300px;
+    padding: 20px;
+    margin-bottom: 160px;
+}
+
+.text1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+.leaf1 {
+    width: 25px;
+    height: auto;
+}
+
+.line1 {
+    width: 50px;
+    height: 2px;
+    background-color: #ff85a2;
 }
 
 
@@ -518,7 +563,6 @@ body {
     font-size: 1.5rem;
 }
 
-/* Large Transparent Pricing Text */
 .pricing-heading {
     font-size: 6rem;
     font-weight: bold;
@@ -533,8 +577,6 @@ body {
     transform: translateX(-50%);
     z-index: 1;
 }
-
-/* Grid Layout */
 .pricing-grid {
     display: flex;
     justify-content: space-evenly;
@@ -545,15 +587,12 @@ body {
     margin-top: 30px;
 }
 
-/* Pricing Columns */
 .pricing-column {
     display: flex;
     flex-direction: column;
     gap: 10px;
     
 }
-
-/* Pricing Cards */
 .pricing-item {
     background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50%, rgba(255, 255, 255, 0) 100%);
     color: white;
@@ -568,7 +607,6 @@ body {
     opacity: 0.8;
 }
 
-/* Text Styling */
 .pricing-item h3 {
     font-family: outfit;
     font-weight: 600;
@@ -635,16 +673,17 @@ body {
     
 }
 
-.banner1 {
+.banner2 {
     display: flex;
     align-items: center;
     align-content: center;
+    text-align: center;
     gap: 10px;
-    margin-left: 330px;
+    margin-left: 360px;
     padding: 30px;
 }
 
-.text1 {
+.text2 {
     position: relative;
     font-family: 'Poppins', sans-serif;
     font-size: 30px;
@@ -652,12 +691,14 @@ body {
     color: white;
 }
 
-.leaf {
-    width: 25px;
+.leaf2 {
+    width: 35px;
     height: auto;
+    position: relative;
 }
 
-.line1 {
+.line2 {
+    position: relative;
     width: 50px;
     height: 2px;
     background-color: #ff85a2;
@@ -672,7 +713,7 @@ body {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
-    overflow-x: auto;
+    /* overflow-x: auto; */
 }
 .gallery-item {
     position: relative;
@@ -698,7 +739,7 @@ body {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
-    color: #ff69b4;
+    color: #B30DA2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -720,13 +761,13 @@ body {
     font-family: Paprika;
     color: #212121;
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 300px;
 }
 .overlay .icon {
     margin-top: 10px;
     width: 35px;
     height: 35px;
-    background: #ff69b4;
+    background: #B30DA2;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -745,17 +786,18 @@ body {
 }
 .content-left2 {
     padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 80px;
     
     background: linear-gradient(90deg, rgba(12, 12, 12, 0.5) 28.6%, rgba(128, 9, 116, 0.275) 85.1%, rgba(77, 6, 70, 0.5) 100%);
     
-    
-
 }
+
 
 .heading2 {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    /* gap: 1rem; */
     margin-bottom: 2rem;
 }
 
@@ -773,46 +815,52 @@ body {
 .heading2 span {
     flex: 1;
     height: 1px;
-    background: #B30DA2;
+    background: #ff85a2;
 }
 
 .services2 {
     color: #B30DA2;
     margin-bottom: 1.5rem;
-    
+    cursor: pointer;
 }
 
 .services2 span {
     margin: 0 0.5rem;
     color: white;
+    
+    
 }
 
 .description2 {
     line-height: 1.6;
     margin-bottom: 2rem;
     opacity: 0.9;
+    font-family: outfit;
+    
 }
 
 .buttons2 {
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    
 }
 
 .btn {
-    padding: 1rem;
+    padding: 0.8rem;
     border: none;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: space-between;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 300;
 }
 
 .btn-white {
     width: 100%;
     background: white;
-    color: black;
+    color: #B30DA2;
+    
 }
 
 .btn-pink {
@@ -823,12 +871,13 @@ body {
 
 .btn::after {
     content: "→";
-    margin-left: 1rem;
-    margin-bottom: 10px;
+    margin-left: 2rem;
+    margin-bottom: 0px;
 }
 .image-container2 {
     position: relative;
     width: 100%;
+    border: 4px solid white;
     height: auto;
 }
 
@@ -841,13 +890,43 @@ body {
 
 .img-small2 {
     position: absolute;
-    width: 250px; 
-    height: 200px; 
+    width: 200px; 
+    height: 236px; 
     object-fit: cover;
-    bottom: 10px;
-    right: 10px;
-    border: 4px solid white;
-    border-radius: 10px;
+    bottom: 0px;
+    right: 0px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+.grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.grid-overlay::before {
+    content: '';
+    position: absolute;
+    left: 33%;
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background: white;
+    box-shadow: 164px 0 0 white; 
+}
+
+.grid-overlay::after {
+    content: '';
+    position: absolute;
+    top: 33%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: white;
+    box-shadow: 0 165px 0 white; 
 }
 
 @media (max-width: 768px) {
@@ -895,6 +974,7 @@ body {
 h2 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+    font-weight: 200;
 }
 
 .form-group {
