@@ -63,17 +63,17 @@ body {
     background: linear-gradient(to right, #d277f1 30%, #ba68c8 50%, #d277f1 70%);
 }
 
-.logo {
+/* .logo {
     font-family: 'outfit', serif;
     font-size: 1.5rem;
     font-weight: 700;
-}
+} */
 .nav-container .logo-image {
     width: 188px;
     height: 150px;
     position: absolute;
     top: -2px;
-    left: 63px;
+    left: 120px;
 }
 
 .nav-links {
@@ -471,14 +471,10 @@ body {
 }
 
 /* Pricing Section............. */
-/* Pricing Section............. */
-/* Background Image */
-/* Background Image */
-/* Background Image */
 .pricing {
     background-image: url("./assets/images/image\ 7.png");
     width: 100%;
-    height: 100vh;
+    height: 130vh;
     position: relative;
     background-size: cover;
     background-position: center;
@@ -498,45 +494,14 @@ body {
     left: 0;
 }
 
-.pricing-title {
-    text-align: center;
-    font-size: 1.8rem;
-    color: white;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
-    margin-bottom: 24%;
-} 
-.icon span{
-    font-family: Outfit, serif;
-    font-weight: 500;
-    
-}
-/* .banner1{
-    align-items: center;
-    text-align: center;
-    position: relative;
-    top: -80px;
-    right: 90px;
-    bottom: 20px;
-    
-}
-.text1{
-    font-size: 25px;
-} */
 .banner1 {
     display: flex;
     align-items: center;
-    align-content: center;
+    justify-content: center;
     position: relative;
-    /* gap: 10px; */
-    /* margin-top: 20px; */
-    margin-left: 300px;
+    margin-top: 30px;
     padding: 20px;
-    margin-bottom: 160px;
+    margin-bottom: 200px;
 }
 
 .text1 {
@@ -564,33 +529,33 @@ body {
 }
 
 .pricing-heading {
-    font-size: 6rem;
+    font-size: 7rem;
     font-weight: bold;
     background: linear-gradient(to bottom, #ffffff, #B30DA2);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    text-transform: uppercase;
     position: absolute;
-    top: 10%;
+    top: 15%;
     left: 50%;
-    opacity: 0.5;
+    opacity: 0.3;
     transform: translateX(-50%);
     z-index: 1;
 }
 .pricing-grid {
     display: flex;
     justify-content: space-evenly;
-    gap: 50px;
-    width: 80%;
+    /* gap: 30px; */
+    width: 1430px;
     position: relative;
-    z-index: 2;
-    margin-top: 30px;
+    z-index: 6;
+    margin-top: 250px;
 }
 
 .pricing-column {
+    width: 530px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     
 }
 .pricing-item {
@@ -604,6 +569,7 @@ body {
     transition: transform 0.3s ease;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     width: 500px;
+    height: 70px;
     opacity: 0.8;
 }
 
@@ -623,7 +589,6 @@ body {
 .arrow {
     font-size: 1.8rem;
     color: #B30DA2;
-    /* font-weight: bold; */
     transition: transform 0.3s ease;
 }
 
@@ -635,17 +600,17 @@ body {
     transform: translateX(5px);
 }
 .separator {
-    width: 100%;
+    width: 90%;
     height: 1px;
     background: repeating-linear-gradient(
         to right,
         transparent,
         transparent 10px,
-        #ff66c4 10px,
-        #ff66c4 20px
+        #B30DA2 10px,
+        #B30DA2 20px
     );
     
-    margin: -5px 0;
+    margin: -7px 0;
 }
 
 .footer-logos {
@@ -667,7 +632,7 @@ body {
 /* Gallery Section */
 .gallery {
     padding: 4rem 2rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
     background-color: #070308;
     
@@ -676,10 +641,11 @@ body {
 .banner2 {
     display: flex;
     align-items: center;
+    justify-content: center;
     align-content: center;
     text-align: center;
     gap: 10px;
-    margin-left: 360px;
+    /* margin-left: 360px; */
     padding: 30px;
 }
 
@@ -709,22 +675,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
-    padding: 20px;
-    max-width: 1200px;
+    gap: 35px;
+    padding: 10px;
+    max-width: 1500px;
     margin: 0 auto;
     /* overflow-x: auto; */
 }
 .gallery-item {
     position: relative;
-    width: 220px;
-    height: 320px;
+    width: 300px;
+    height: 250px;
     overflow: hidden;
     border-radius: 10px;
 }
 .gallery-item img {
-    width: 100%;
-    height: 100%;
+    width: 200px;
+    height: 250px;
     object-fit: cover;
     transition: transform 0.3s ease;
     border-radius: 10px;
@@ -778,7 +744,7 @@ body {
 
 /* Expertise Section......... */
 .container2 {
-    max-width: 1100px;
+    max-width: 1270px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -872,6 +838,8 @@ body {
 .btn::after {
     content: "→";
     margin-left: 2rem;
+    text-align: center;
+    font-size: 20px;
     margin-bottom: 0px;
 }
 .image-container2 {
@@ -929,14 +897,6 @@ body {
     box-shadow: 0 165px 0 white; 
 }
 
-@media (max-width: 768px) {
-    .container2 {
-        grid-template-columns: 1fr;
-    }
-    .content-left2 {
-        padding-right: 0;
-    }
-}
 /* Appointment Form ...............*/
 .container1 {
     min-height: 70px;
@@ -946,7 +906,7 @@ body {
     background-position: center;
     color: white;
     padding: 2rem;
-    max-width: 1100px;
+    max-width: 1270px;
     margin: 0 auto;
     display: flex;
     gap: 9rem;
@@ -964,7 +924,7 @@ body {
 
 .appointment-form {
     background-color: #B30DA2;
-    width: 300px;
+    width: 200px;
 }
 
 .services-info {
@@ -1018,12 +978,12 @@ button:hover {
 .open-hours {
     color: #B30DA2;
     font-size: 40px;
-    margin: rem 0 1rem;
+    margin-top: -20px;
     
 }
 
 .description {
-    margin: 1rem 0;
+    margin: 2rem 0;
     line-height: 1.6;
     opacity: 0.9;
     
@@ -1035,6 +995,7 @@ button:hover {
 
 .hours-list li {
     margin: 0.5rem 0;
+    opacity: 0.5;
 }
 
 .all-services {
@@ -1046,17 +1007,6 @@ button:hover {
     color: #B30DA2;
     padding: 0.5rem 1rem;
     
-}
-
-@media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .appointment-form,
-    .services-info {
-        width: 100%;
-    }
 }
 /* Footer part........................... */
 footer {
@@ -1174,50 +1124,111 @@ footer {
     margin-left: 15px;
     text-decoration: none;
 }
-@media Screen and (max-width: 500px) {
-
-    body {
-        font-size: 12px;
-        padding: 5px;
+  @media only screen and (max-width: 768px) {
+    /* Navigation */
+    .nav-container {
+      position: relative;
     }
-
+    
+    .nav-container .logo-image {
+      width: 120px;
+      height: 100px;
+      left: 10px;
+    }
+    
     .nav-links {
+      flex-direction: row;
+    }
+    
+    .nav-links li {
+      margin: 10px 0;
+    }
+    .hero-text h1 {
+      /* font-size: 36px; */
+    }
+    .hero-content{
         flex-direction: column;
-        gap: 10px;
     }
-
-    .hero-content {
-        flex-direction: column;
-        text-align: center;
+    .btn-hero{
+        width: 350px;
+        margin-top: 31px;
     }
-
-    .service-icons {
-        flex-direction: column;
-        gap: 20px;
+    .services-icons {
+        padding-top: 50px;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
     }
-
-    .package-grid {
-        grid-template-columns: 1fr;
+    
+    .service-icon {
+      width: 100%;
+      max-width: 300px;
+      justify-content: center;
     }
-
+    .package-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .package, .package1 {
+      width: 90%;
+      max-width: 300px;
+    }
+    .pricing-heading {
+      font-size: 4rem;
+    }
+    .text1{
+        font-size: 1.5rem;
+    }
     .pricing-grid {
-        grid-template-columns: 1fr;
+      flex-direction: row;
+      align-items: center;
+      padding-left: 50px;
+      gap: 30px;
     }
-
-    .gallery-grid {
-        grid-template-columns: repeat(2, 1fr);
+    
+    .pricing-column {
+      width: 100%;
     }
-
-    .expertise-container {
-        grid-template-columns: 1fr;
+    
+    .pricing-item {
+      width: 100%;
+      height: 80px;
     }
-
-    .appointment {
-        grid-template-columns: 1fr;
+    .gallery-container {
+      justify-content: center;
+      gap: 20px;
     }
-
+    
+    .gallery-item {
+      width: 45%;
+      height: 250px;
+    }
+    .content-left2 {
+      padding: 40px 1rem 1rem;
+    }
     .footer-container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+      flex-direction: column;
+      gap: 2rem;
     }
-}
+    
+    .footer-section {
+      width: 100%;
+    }
+    
+    .recent-posts, .links, .newsletter {
+      margin-top: 0;
+    }
+    
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+    
+    .footer-links {
+      margin-top: 10px;
+    }
+  }
+  
+  
