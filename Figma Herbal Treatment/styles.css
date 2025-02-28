@@ -1154,110 +1154,676 @@ footer {
     margin-left: 15px;
     text-decoration: none;
 }
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .nav-container {
-      position: relative;
+      padding: 0.5rem 2%;
     }
-    
+  
     .nav-container .logo-image {
       width: 120px;
       height: 100px;
       left: 10px;
+      top: 0;
     }
-    
-    .nav-links {
-      flex-direction: row;
+  
+    .nav- .nav-links {
+      gap: 1rem;
+      font-size: 0.9rem;
     }
-    
-    .nav-links li {
-      margin: 10px 0;
+  
+    .right-section {
+      gap: 10px;
     }
-    .hero-content{
-        flex-direction: column;
+  
+    .contact-btn {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
     }
-    .hero-image{
-        flex-direction: column;
+  
+    .hero {
+      min-height: auto;
+      padding: 2rem 1rem;
+      position: relative;
     }
-    .btn-hero{
-        width: 350px;
-        margin-top: 31px;
-    }
-    .services-icons {
-        padding-top: 50px;
+  
+    .hero-content {
       flex-direction: column;
-      align-items: center;
       gap: 2rem;
+      position: relative;
     }
-    
-    .service-icon {
+  
+    .hero-text {
+      max-width: 100%;
+      z-index: 3;
+    }
+  
+    .hero-text h1 {
+      font-size: 32px;
+      text-align: center;
+    }
+  
+    .hero-text p {
+      text-align: center;
+    }
+  
+    .hero-content .hero-image {
+      position: relative;
       width: 100%;
-      max-width: 300px;
-      justify-content: center;
+      height: auto;
+      max-width: 400px;
+      left: auto;
+      top: auto;
+      margin: 0 auto;
+      z-index: 1;
     }
-    .package-wrapper {
+  
+    .ellipse {
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      top: 65%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      opacity: 0.5;
+    }
+  
+    .herosearch-container {
       flex-direction: column;
       align-items: center;
+      width: 100%;
+      z-index: 3;
+      position: relative;
     }
-    
-    .package, .package1 {
+  
+    .herosearch-bar {
+      width: 100%;
+      max-width: 450px;
+    }
+  
+    .btn-hero {
+      width: 100%;
+      max-width: 450px;
+      margin-top: 15px;
+    }
+
+    .services-icons {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      padding: 3rem 1rem;
+      position: relative;
+    }
+  
+    .bg-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      opacity: 50%;
+      z-index: 1;
+    }
+  
+    .service-icon {
+      width: 45%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      z-index: 1;
+    }
+  
+    .icon-circle {
+      width: 60px;
+      height: 60px;
+      min-width: 60px;
+    }
+  
+    .icon-circle img {
+      width: 40px;
+      height: 40px;
+    }
+    .container {
       width: 90%;
-      max-width: 300px;
+      padding: 40px 0;
     }
-    
+  
+    .banner {
+      margin-left: 0;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+  
+    .package-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    .pricing {
+      height: auto;
+      padding: 3rem 1rem;
+    }
+  
     .pricing-heading {
       font-size: 4rem;
+      top: 18%;
     }
-    .text1{
-        font-size: 1.5rem;
+  
+    .banner1 {
+      margin-bottom: 80px;
     }
+  
+    .text1 {
+      font-size: 1.5rem;
+    }
+  
     .pricing-grid {
+      display: flex;
       flex-direction: row;
-      align-items: center;
-      padding-left: 50px;
-      gap: 30px;
+      width: 100%;
+      margin-top: 120px;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .pricing-column {
+      width: 90%;
+      max-width: 500px;
+    }
+  
+    .pricing-item {
+      width: 100%;
+      height: auto;
+      min-height: 70px;
+      padding: 15px;
+    }
+  
+    .footer-logos {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      gap: 100px;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  
+    .footer-logos img {
+      width: 40px;
+    }
+    .gallery {
+      padding: 3rem 1rem;
+    }
+  
+    .gallery-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 15px;
+    }
+  
+    .gallery-item img {
+      width: 100%;
+      height: 200px;
+    }
+  
+    .overlay h2 {
+      font-size: 50px;
+    }
+  
+    .overlay h3 {
+      font-size: 16px;
     }
     
+    .content-left2 {
+      padding: 30px 0rem;
+    }
+  
+    .heading2 {
+        font-size: small;
+        padding: 0px 1rem;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+    }
+    .heading2::after::before::content{
+        width: 10px;
+        height: 10px;
+    }
+  
+    .services2 {
+        padding: 0px 1rem;
+        text-align: center;
+    }
+  
+    .description2 {
+        padding: 0px 1rem;
+        margin-right: 0;
+        font-size: 0.9rem;
+    }
+  
+    .buttons2 {
+      gap: 15px;
+    }
+  
+    .image-container2 {
+      height: 100%;
+    }
+  
+    .img-main2 {
+      height: 100%;
+      min-height: 400px;
+    }
+  
+    .img-small2 {
+      width: 120px;
+      height: 157px;
+      right: 0px;
+      bottom: 0px;
+    }
+    .grid-overlay::before{
+        box-shadow: 130px 0 0 white;
+    }
+  
+    .container1 {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      padding: 2rem 1rem;
+    }
+  
+    .appointment-form,
+    .services-info {
+      width: 48%;
+      padding: 1.5rem;
+    }
+  
+    .appointment-form {
+      height: auto;
+    }
+  
+    .services-info {
+      text-align: right;
+    }
+  
+    .open-hours {
+      font-size: 30px;
+    }
+  
+    .description {
+      margin: 2rem 0;
+      font-size: 0.9rem;
+    }
+  
+    .all-services {
+      left: 0;
+    }
+  
+    .footer-container {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      align-items:first baseline;
+    }
+  
+    .footer-section {
+      width: 100%;
+      margin-right: 0;
+      text-align:left;
+    }
+  
+    .recent-posts,
+    .links,
+    .newsletter {
+      margin-top: 0;
+    }
+  
+    .post {
+      justify-content:flex-start;
+    }
+  
+    .links ul {
+      text-align: left;
+    }
+  
+    .form-group1 {
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  
+    .newsletter input {
+      width: 70%;
+    }
+    .newsletter{
+        width: 50%;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: left;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+  
+    .footer-links {
+      display: flex;
+      justify-content:first baseline;
+      gap: 1rem;
+      margin-top: 10px;
+    }
+  
+    .footer-links a {
+      margin-left: 0;
+    }
+  }
+  @media only screen and (max-width: 320px) {
+    .nav-container {
+      padding: 0.5rem 1%;
+      flex-direction:column;
+    }
+  
+    .nav-container .logo-image {
+      width: 80px;
+      height: 70px;
+      left: 5px;
+      top: 0;
+      flex-direction: column;
+    }
+  
+    .nav-links {
+        flex-direction: column;
+    }
+  
+    .right-section {
+        margin-top: 20px;
+        flex-direction: row;
+        
+      gap: 5px;
+    }
+  
+    .contact-btn {
+      padding: 0.3rem 0.6rem;
+      font-size: 1rem;
+    }
+    .hero {
+      padding: 1rem 0.5rem;
+    }
+  
+    .hero-text h1 {
+      font-size: 24px;
+      line-height: 1.3;
+    }
+  
+    .hero-text p {
+      font-size: 14px;
+    }
+  
+    .herosearch-bar {
+      height: 40px;
+    }
+  
+    .herosearch-input {
+      font-size: 14px;
+    }
+  
+    .btn-hero {
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    .services-icons {
+      padding: 2rem 0.5rem;
+    }
+  
+    .service-icon {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .icon-circle {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .icon-circle img {
+      width: 30px;
+      height: 30px;
+    }
+  
+    .service-icon h3 {
+      font-size: 14px;
+    }
+    .bg-image {
+        position: absolute;
+        /* width: 100px; */
+        display: flex;
+        /* height: 10px; */
+        opacity: 50%;
+        z-index: 1;
+      }
+  
+    /* Combo Packages */
+    .container {
+      width: 95%;
+      padding: 40px 0;
+    }
+  
+    .banner {
+      padding:10px;
+      margin-bottom: 100px;
+    }
+  
+    .text {
+      font-size: 30px;
+    }
+  
+    .package-wrapper {
+      gap: 30px;
+    }
+  
+    .package,
+    .package1 {
+      width: 100%;
+      min-width: unset;
+    }
+  
+    .package h2,
+    .overlay1 h2 {
+      font-size: 40px;
+    }
+  
+    .package h1,
+    .overlay1 h1 {
+      font-size: 1.8rem;
+    }
+
+    .pricing {
+      padding: 1rem 0.5rem;
+    }
+    .banner1{
+      max-width: 100%;
+      margin-top: 90px;
+    }
+  
+    .pricing-heading {
+      margin-top: -40px;
+      font-size: 4rem;
+    }
+  
+    .text1 {
+      font-size: 1.2rem;
+    }
+    .pricing-grid{
+      flex-direction: column;
+    }
+  
     .pricing-column {
       width: 100%;
     }
-    
+  
     .pricing-item {
-      width: 100%;
-      height: 80px;
+      padding: 12px;
     }
+  
+    .pricing-item h3 {
+      font-size: 1.1rem;
+    }
+  
+    .pricing-item p {
+      font-size: 0.9rem;
+    }
+  
+    .footer-logos {
+      gap: 25px;
+    }
+  
+    .footer-logos img {
+      width: 30px;
+    }
+    .gallery {
+      padding: 2rem 0.5rem;
+    }
+  
+    .text2 {
+      font-size: 20px;
+    }
+  
     .gallery-container {
-      justify-content: center;
-      gap: 20px;
+      flex-direction: row;
+      gap: 10px;
     }
-    
+  
     .gallery-item {
-      width: 45%;
-      height: 250px;
+      width: 100%;
+      height: 180px;
     }
+  
+    .gallery-item img {
+      width: 100%;
+      height: 180px;
+    }
+  
+    .overlay h2 {
+      font-size: 40px;
+    }
+  
+    .overlay h3 {
+      font-size: 14px;
+    }
+  
+    .container2 {
+      grid-template-columns: 1fr;
+    }
+  
     .content-left2 {
-      padding: 40px 1rem 1rem;
+      padding: 20px 1rem;
     }
-    .footer-container {
+  
+    .heading2 h1 {
+      font-size: 1.5rem;
+    }
+  
+    .services2 {
+      font-size: 0.9rem;
+    }
+  
+    .description2 {
+      font-size: 0.8rem;
+    }
+  
+    .btn {
+      padding: 0.6rem;
+      font-size: 0.9rem;
+    }
+  
+    .img-small2 {
+      width: 110px;
+      height: 100px;
+    }
+    .grid-overlay::before{
+      box-shadow: 100px 0 0 white;
+  }
+  
+    /* Appointment Form */
+    .container1 {
       flex-direction: column;
       gap: 2rem;
     }
-    
-    .footer-section {
+  
+    .appointment-form,
+    .services-info {
       width: 100%;
+      padding: 1rem;
     }
-    
-    .recent-posts, .links, .newsletter {
-      margin-top: 0;
+  
+    .open-hours {
+      font-size: 24px;
     }
-    
-    .footer-bottom {
+  
+    .description {
+      font-size: 0.8rem;
+    }
+  
+    .hours-list li {
+      font-size: 0.8rem;
+    }
+    .open-hours{
+      font-size: 2rem;
+    }
+  
+    .all-services {
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
+    }
+  
+    /* Footer */
+    footer {
+      padding: 30px 20px;
+    }
+  
+    .footer-section h2,
+    .footer-section h3 {
+      font-size: 18px;
+    }
+  
+    .footer-section p {
+      font-size: 12px;
+    }
+  
+    .post {
       flex-direction: column;
-      text-align: center;
-      gap: 1rem;
+      align-items:first baseline;
+      text-align:left;
+      margin-bottom: 1.5rem;
+    }
+  
+    .date {
+      margin-bottom: 0.5rem;
+    }
+  
+    .links ul li {
+      font-size: 0.9rem;
+      
+    }
+    .links ul{
+      list-style: none;
+    }
+  
+    .newsletter input {
+      font-size: 0.9rem;
+    }
+  
+    .footer-bottom {
+      font-size: 15px;
     }
     
+  
     .footer-links {
-      margin-top: 10px;
+      flex-direction: column;
+      gap: 0.5rem;
     }
   }
  
