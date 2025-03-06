@@ -707,7 +707,7 @@ display: flex;
 flex-direction: row;
   padding: 4rem 2rem;
   width: auto;
-  height: 600px;
+  /* height: 600px; */
   margin: 50px auto;
   background-color: #0C0C0C;
   
@@ -718,7 +718,8 @@ flex-direction: row;
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 10px;
+  gap: 0px;
+  margin-top: 50px;
 }
 
 .text2 {
@@ -753,20 +754,20 @@ flex-direction: row;
 
 /* Navigation Buttons */
 .nav-btn {
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.5); 
   color: white;
   font-size: 20px;
   border: none;
   cursor: pointer;
-  width: 40px; /* Set button width */
-  height: 40px; /* Set button height */
-  line-height: 40px; /* Center icon */
+  width: 40px; 
+  height: 40px; 
+  line-height: 40px; 
   text-align: center;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  border-radius: 50%; /* Make it circular */
+  border-radius: 50%; 
   transition: background 0.3s ease-in-out;
   display: flex;
   align-items: center;
@@ -787,33 +788,65 @@ flex-direction: row;
 
 /* Slider */
 .slider {
-  width: 1200px;
+  /* width: 1200px;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 10px; */
+
+  width: 100%;
+  max-width: 1600px; 
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Image Container */
 .containercoursel {
-  display: flex;
+  /* display: flex;
+  align-items: center;
   gap: 10px;
+  transition: transform 0.5s ease-in-out; */
+  display: flex;
+  align-items: center;
+  gap: 40px;
   transition: transform 0.5s ease-in-out;
 }
 
 /* Gallery Items */
 .gallery-item {
-  width: 230px;
+  /* width: 230px;
   height: 300px;
   flex-shrink: 0;
   overflow: hidden;
   cursor: pointer;
+  position: relative; */
+  width: 280px;
+  height: 300px;
+  flex-shrink: 0;
+  overflow: hidden;
   position: relative;
+  cursor: pointer;
+  transition: width 0.4s ease-in-out, height 0.4s ease-in-out;
+}
+
+.gallery-item:hover {
+  width: 300px;
+  height: 320px;
 }
 
 .gallery-item img {
-  width: 90%;
+  /* width: 100%;
+  height: 100%;
+  object-fit: cover; */
+  width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: transform 0.4s ease-in-out;
   
+}
+.gallery-item:hover img {
+  transform: scale(1.1);
 }
 
 /* Overlay on Hover */
@@ -868,11 +901,66 @@ flex-direction: row;
   transition: transform 0.3s ease-in-out;
 }
 
-/* .gallery-item:hover .icon {
-  transform: scale(1.2);
-} */
+/* Overlay Effect */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: #B30DA2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
 
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
 
+@media (max-width: 1024px) {
+  .gallery-item {
+    width: 240px;
+    height: 260px;
+  }
+
+  .gallery-item:hover {
+    width: 260px;
+    height: 290px;
+  }
+}
+
+@media (max-width: 768px) {
+  .containercoursel {
+    gap: 20px;
+  }
+
+  .gallery-item {
+    width: 160px; 
+    height: 200px;
+  }
+
+  .gallery-item:hover {
+    width: 180px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 480px) and (min-width: 320px) {
+  .gallery-item {
+    width: 100px;
+    height: 120px;
+  }
+
+  .gallery-item.hover {
+    width: 140px;
+    height: 160px;
+  }
+}
 
 /* Expertise Section......... */
 .container2 {
@@ -1467,29 +1555,6 @@ footer {
   .footer-logos img {
     width: 40px;
   }
-  .gallery {
-    padding: 3rem 1rem;
-  }
-
-  .gallery-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .overlay h2 {
-    font-size: 50px;
-  }
-
-  .overlay h3 {
-    font-size: 16px;
-  }
   
   .content-left2 {
     padding: 30px 0rem;
@@ -1526,18 +1591,21 @@ footer {
   }
 
   .img-main2 {
-    height: 100%;
-    min-height: 400px;
+    /* height: 100%; */
+    min-height: 200px;
   }
 
   .img-small2 {
-    width: 120px;
-    height: 157px;
+    width: 220px;
+    height: 210px;
     right: 0px;
     bottom: 0px;
   }
   .grid-overlay::before{
-      box-shadow: 130px 0 0 white;
+      box-shadow: 200px 0 0 white;
+  }
+  .grid-overlay::after {
+    box-shadow: 0 190px 0 white; 
   }
 
   .container1 {
@@ -1807,29 +1875,6 @@ footer {
 
   .footer-logos img {
     width: 40px;
-  }
-  .gallery {
-    padding: 3rem 1rem;
-  }
-
-  .gallery-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .overlay h2 {
-    font-size: 50px;
-  }
-
-  .overlay h3 {
-    font-size: 16px;
   }
   
   .content-left2 {
@@ -2492,29 +2537,6 @@ footer {
   .footer-logos img {
     width: 40px;
   }
-  .gallery {
-    padding: 3rem 1rem;
-  }
-
-  .gallery-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  .gallery-item img {
-    width: 100%;
-    height: 200px;
-  }
-
-  .overlay h2 {
-    font-size: 50px;
-  }
-
-  .overlay h3 {
-    font-size: 16px;
-  }
   
   .content-left2 {
     padding: 30px 0rem;
@@ -2663,7 +2685,7 @@ footer {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-  }
+  } 
   
   .service-icon{
     flex-direction: column;
@@ -2876,30 +2898,8 @@ footer {
   .footer-logos img {
     width: 30px;
   }
-  .gallery {
-    padding: 2rem 0.5rem;
-  }
 
-  .text2 {
-    font-size: 20px;
-  }
-
-  .containercoursel{
-    gap: 20px;
-  }
-
-  .gallery-item {
-    width: 100%;
-    height: 180px;
-  }
-
-  .overlay h2 {
-    font-size: 40px;
-  }
-
-  .overlay h3 {
-    font-size: 14px;
-  }
+  
   /* experties............................... */
 
   .content-left2 {
@@ -3016,44 +3016,7 @@ footer {
 
 }
 
-@media (max-width: 1200px) {
-  .gallery-item {
-      flex: 0 0 25%;
-      max-width: 25%;
-  }
-}
 
-@media (max-width: 992px) {
-  .gallery-item {
-      flex: 0 0 33.33%;
-      max-width: 33.33%;
-  }
-}
-
-@media (max-width: 768px) {
-  .gallery-item {
-      flex: 0 0 50%;
-      max-width: 50%;
-  }
-
-  .nav-btn {
-      width: 35px;
-      height: 35px;
-      font-size: 16px;
-  }
-}
-@media (max-width: 576px) {
-  .gallery-item {
-      flex: 0 0 100%;
-      max-width: 100%;
-  }
-
-  .nav-btn {
-      width: 30px;
-      height: 30px;
-      font-size: 14px;
-  }
-}
 
 
 

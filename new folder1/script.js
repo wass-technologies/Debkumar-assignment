@@ -1,48 +1,69 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const slider = document.querySelector(".containercoursel");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const itemWidth = 240; // Image width (230px) + margin
-    let position = 0;
+  const container = document.querySelector(".containercoursel");
+  const items = document.querySelectorAll(".gallery-item");
+  const totalItems = items.length;
+  let itemWidth = items[0].offsetWidth + 10; // Include gap spacing
+  let index = 0;
+  let autoScroll;
 
-    // Duplicate images for infinite scrolling effect
-    const images = [...slider.children];
-    images.forEach((image) => {
-        const clone = image.cloneNode(true);
-        slider.appendChild(clone);
-    });
+  // Clone items to create an infinite scrolling effect
+  for (let i = 0; i < totalItems; i++) {
+      let clone = items[i].cloneNode(true);
+      container.appendChild(clone);
+  }
 
-    // Function to move slider left
-    function slideLeft() {
-        if (position >= 0) {
-            position = -slider.scrollWidth / 2;
-        }
-        position += itemWidth;
-        slider.style.transition = "transform 0.5s ease-in-out";
-        slider.style.transform = `translateX(${position}px)`;
-    }
+  function scrollGallery(forward = true) {
+      if (forward) {
+          index++;
+      } else {
+          index--;
+      }
 
-    // Function to move slider right
-    function slideRight() {
-        position -= itemWidth;
-        slider.style.transition = "transform 0.5s ease-in-out";
-        slider.style.transform = `translateX(${position}px)`;
+      container.style.transition = "transform 0.5s ease-in-out";
+      container.style.transform = `translateX(-${index * itemWidth}px)`;
 
-        // Reset position when reaching the end
-        if (Math.abs(position) >= slider.scrollWidth / 2) {
-            setTimeout(() => {
-                position = 0;
-                slider.style.transition = "none";
-                slider.style.transform = `translateX(${position}px)`;
-            }, 500);
-        }
-    }
+      // Reset after full cycle for infinite effect
+      if (index >= totalItems) {
+          setTimeout(() => {
+              container.style.transition = "none"; // Remove transition before resetting
+              index = 0;
+              container.style.transform = `translateX(0px)`;
+          }, 500); // Delay to match transition duration
+      } else if (index < 0) {
+          setTimeout(() => {
+              container.style.transition = "none"; // Remove transition before resetting
+              index = totalItems - 1;
+              container.style.transform = `translateX(-${index * itemWidth}px)`;
+          }, 500);
+      }
+  }
 
-    // Button click event listeners
-    prevBtn.addEventListener("click", slideLeft);
-    nextBtn.addEventListener("click", slideRight);
+  // Auto-scroll every 2 seconds
+  function startAutoScroll() {
+      autoScroll = setInterval(() => scrollGallery(true), 2000);
+  }
 
-    // Auto-slide every 3 seconds (optional)
-    setInterval(slideRight, 3000);
+  function stopAutoScroll() {
+      clearInterval(autoScroll);
+  }
+
+  startAutoScroll(); // Start auto-scroll initially
+
+  // Adjust item width on window resize
+  window.addEventListener("resize", () => {
+      itemWidth = items[0].offsetWidth + 10;
+  });
+
+  // Left & Right Buttons
+  document.getElementById("prevBtn").addEventListener("click", () => {
+      stopAutoScroll();
+      scrollGallery(true);
+      startAutoScroll();
+  });
+
+  document.getElementById("nextBtn").addEventListener("click", () => {
+      stopAutoScroll();
+      scrollGallery(false);
+      startAutoScroll();
+  });
 });
-
