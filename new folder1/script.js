@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   }
 
-  // Auto-scroll every 2 seconds
+  // Auto-scroll every 4 seconds
   function startAutoScroll() {
-      autoScroll = setInterval(() => scrollGallery(true), 2000);
+      autoScroll = setInterval(() => scrollGallery(true), 4000);
   }
 
   function stopAutoScroll() {
