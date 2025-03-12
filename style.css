@@ -243,7 +243,7 @@ nav ul li a.botton{
   }
   
   .hero-text {
-    max-width: 600px;
+    max-width: 700px;
   }
   
   .hero-text h1 {
@@ -253,6 +253,8 @@ nav ul li a.botton{
     margin-bottom: 1.5rem;
   }
   .herosearch-container {
+    /* max-width: 1000px;
+    width: 100%; */
     display: flex;
     align-items: center;
     gap: 10px;
@@ -265,13 +267,15 @@ nav ul li a.botton{
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
+    /* width: 800px; */
     height: 50px;
     background-color: white;
     border: 2px solid #4a235a;
   }
   .herosearch-input {
-   width: 260px;
+   width: 200px;
     flex: 1;
     border: none;
     padding: 10px;
@@ -1610,6 +1614,10 @@ footer {
     min-height: 70px;
     padding: 15px;
   }
+  .wrapper1{
+    max-width: 1340px;
+    width: 100%;
+  }
 
   .footer-logos {
     display: flex;
@@ -1943,6 +1951,10 @@ footer {
     min-height: 70px;
     padding: 15px;
   }
+  .wrapper1{
+    max-width: 1024px;
+    width: 100%;
+  }
 
   .footer-logos {
     display: flex;
@@ -2254,6 +2266,10 @@ footer {
     width: 90%;
     max-width: 500px;
   }
+  .wrapper1{
+    max-width: 760px;
+    width: 100%;
+  }
 
   .pricing-item {
     width: 100%;
@@ -2453,7 +2469,7 @@ footer {
   }
 
   .pricing-heading {
-    margin-top: -40px;
+    margin-top: -100px;
     font-size: 4rem;
   }
 
@@ -2466,6 +2482,7 @@ footer {
   }
   .wrapper1{
     max-width: 750px;
+    width: 100%;
   }
 
   .pricing-column {
@@ -2473,7 +2490,9 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: 100%;
+    margin-left: 10px;
+    max-width: 750px;
+    width: 90%;
     
   }
 
@@ -2483,6 +2502,7 @@ footer {
   }
 
   .pricing-item h3 {
+    text-align: left;
     font-size: 1.1rem;
   }
 
@@ -2490,13 +2510,13 @@ footer {
     font-size: 0.9rem;
   }
 
-  .footer-logos {
+  /* .footer-logos {
     gap: 25px;
   }
 
   .footer-logos img {
     width: 30px;
-  }
+  } */
   
   .container2 {
     grid-template-columns: 1fr;
@@ -2513,6 +2533,33 @@ footer {
     gap: 2rem;
   }
 }
+@media  (max-width: 426px){
+  
+  .herosearch-bar {
+    height: 50px;
+    width: 350px;
+  }
+
+  .herosearch-input {
+    font-size: 14px;
+    width: 150px;
+  }
+
+  .btn-hero {
+    height: 50px;
+    width: 200px;
+    font-size: 14px;
+  }
+  .wrapper1{
+    max-width: 360px;
+    width: 100%;
+  }
+
+
+}
+@media (max-width: 360px) {
+  
+}
 @media  (max-width: 320px){
   html,body{
     width: 100%;
@@ -2520,6 +2567,9 @@ footer {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+  }
+  .logo{
+    margin-left: -30px;
   }
   .hero {
     padding: 1rem 0.5rem;
@@ -2536,14 +2586,17 @@ footer {
 
   .herosearch-bar {
     height: 40px;
+    width: 300px;
   }
 
   .herosearch-input {
     font-size: 14px;
+    width: 100px;
   }
 
   .btn-hero {
     height: 40px;
+    width: 200px;
     font-size: 14px;
   }
 
@@ -2642,6 +2695,7 @@ footer {
   }
 
   .pricing-item h3 {
+    text-align: left;
     font-size: 1.1rem;
   }
 
@@ -2777,7 +2831,6 @@ footer {
   }
 
 }
-
 
 
 
