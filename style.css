@@ -1347,6 +1347,9 @@ footer {
 }
 
 @media (max-width: 1440px){
+  .logo{
+    margin-left: -20px;
+  }
   .hero {
     min-height: auto;
     height: 550px;
@@ -1363,7 +1366,7 @@ footer {
   }
 
   .hero-text {
-    width: 90%;
+    width: 70%;
     z-index: 3;
   }
 
@@ -1513,11 +1516,13 @@ footer {
     flex-direction: row;
     width: 1250px;
     margin-top: 120px;
+    /* margin-left: 20px; */
     gap: 50px;
     justify-content: center;
   }
 
   .pricing-column {
+    margin-left: 50px;
     width: 90%;
   }
 
@@ -1763,7 +1768,7 @@ footer {
 
   .btn-hero {
     width: 100%;
-    max-width: 450px;
+    max-width: 250px;
     margin-top: 15px;
   }
 
@@ -2085,7 +2090,7 @@ footer {
 
   .btn-hero {
     width: 100%;
-    max-width: 450px;
+    max-width: 250px;
     margin-top: 15px;
   }
 
