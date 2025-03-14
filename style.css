@@ -1669,16 +1669,7 @@ footer {
     width: 80%;
   }
   .newsletter{
-      width: 60%;
-  }
-  .newsletter button {
-    width: 70%;
-    padding: 10px;
-    margin-top: 10px;
-    background: white;
-    color: black;
-    border: none;
-    cursor: pointer;
+      width: 40%;
   }
 
   .footer-bottom {
@@ -1689,6 +1680,7 @@ footer {
   }
   .form-group1{
     float: left;
+    
   }
 
   .footer-links {
@@ -1819,7 +1811,7 @@ footer {
   .banner {
     margin-left: 0;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .package-wrapper {
@@ -2004,7 +1996,7 @@ footer {
     width: 70%;
   }
   .newsletter{
-      width: 50%;
+      width: 35%;
   }
 
   .footer-bottom {
@@ -2141,7 +2133,7 @@ footer {
   .banner {
     margin-left: 0;
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 
   .package-wrapper {
