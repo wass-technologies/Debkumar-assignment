@@ -1665,7 +1665,8 @@ footer {
   }
 
   .form-group1 {
-    max-width: 300px;
+    float: left;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -1673,7 +1674,10 @@ footer {
     width: 80%;
   }
   .newsletter{
-      width: 15%;
+      width: 500px;
+  }
+  .newsletter button{
+    width: 50%;
   }
 
   .footer-bottom {
@@ -1681,10 +1685,6 @@ footer {
     text-align: left;
     gap: 1rem;
     margin-top: 2rem;
-  }
-  .form-group1{
-    float: left;
-    
   }
 
   .footer-links {
