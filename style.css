@@ -57,22 +57,13 @@ body{
   padding: 1rem 2rem;
   background: #d67df3;
   backdrop-filter: blur(10px);
-  /* z-index: 1000; */
-  
 }
-.container{
-    max-width: 1737px;
-    height: auto;
-    margin: auto;
-    position: relative;
-}
+
 nav{
   display: flex;
   height: 60px;
   width: 100%;
-  /* background: linear-gradient(to right, #d277f1 30%, #ba68c8 50%, #d277f1 70%);  */
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
-
   align-items: center;
   text-align: center;
   justify-content: space-between;
@@ -80,10 +71,7 @@ nav{
   padding: 0rem 5%;
  
 }
-nav .logo{
-  
-  /* margin-left: 50px; */
-}
+
 nav ul{
   display: flex;
   flex-wrap: wrap;
@@ -105,6 +93,7 @@ nav ul li a{
 }
 .contact-us{
   margin-top: -25px;
+  margin-right: -190px;
   color: #f2f2f2;
   text-decoration: none;
   font-size: 18px;
@@ -115,6 +104,9 @@ nav ul li a{
   transition: all 0.3s ease;
   cursor: pointer;
   
+}
+.vec-img{
+  margin-top: -20px;
 }
 nav ul li a.botton{
   display: none;
@@ -138,6 +130,15 @@ nav .menu-btn i{
 input[type="checkbox"]{
   display: none;
 }
+@media (max-width: 1024px){
+  .vec-img{
+    display: none;
+  }
+  .contact-us{
+    position: relative;
+    margin-right: 0px;
+  }
+}
 @media (max-width: 1000px){
   nav{
     padding: 0 40px 0 50px;
@@ -146,6 +147,9 @@ input[type="checkbox"]{
 @media (max-width: 920px) {
   nav .menu-btn i{
     display: block;
+  }
+  .vec-img{
+    display: none;
   }
   #click:checked ~ .menu-btn i:before{
     content: "\f00d";
@@ -1590,7 +1594,7 @@ footer {
   }
 
   .img-small2 {
-    width: 220px;
+    width: 250px;
     height: 210px;
     right: 0px;
     bottom: 0px;
@@ -1669,7 +1673,7 @@ footer {
     width: 80%;
   }
   .newsletter{
-      width: 40%;
+      width: 15%;
   }
 
   .footer-bottom {
@@ -1849,6 +1853,7 @@ footer {
   }
 
   .pricing-column {
+    margin-right: 40px;
     width: 90%;
     max-width: 500px;
   }
@@ -2592,7 +2597,8 @@ footer {
   }
 
   .pricing-column {
-    width: 100%;
+    
+    width: 90%;
   }
 
   .pricing-item {
@@ -2608,13 +2614,13 @@ footer {
     font-size: 0.9rem;
   }
 
-  .footer-logos {
+  /* .footer-logos {
     gap: 25px;
   }
 
   .footer-logos img {
     width: 30px;
-  }
+  } */
   .wrapper1{
     max-width: 320px;
     width: 100%;
