@@ -28,13 +28,13 @@ document.addEventListener("DOMContentLoaded", function () {
               container.style.transition = "none"; 
               index = 0;
               container.style.transform = `translateX(0px)`;
-          }, 500); // Delay to match transition duration
+          }, 0); // Delay to match transition duration
       } else if (index < 0) {
           setTimeout(() => {
               container.style.transition = "none"; 
               index = totalItems - 1;
               container.style.transform = `translateX(-${index * itemWidth}px)`;
-          }, 500);
+          }, 0);
       }
   }
 
