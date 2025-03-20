@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.querySelector(".containercoursel");
   const items = document.querySelectorAll(".gallery-item");
   const totalItems = items.length;
-  let itemWidth = items[0].offsetWidth + 10; // Include gap spacing
+  let itemWidth = items[0].offsetWidth + 10; 
   let index = 0;
   let autoScroll;
 
@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", function () {
       // Reset after full cycle for infinite effect
       if (index >= totalItems) {
           setTimeout(() => {
-              container.style.transition = "none"; // Remove transition before resetting
+              container.style.transition = "none"; 
               index = 0;
               container.style.transform = `translateX(0px)`;
           }, 500); // Delay to match transition duration
       } else if (index < 0) {
           setTimeout(() => {
-              container.style.transition = "none"; // Remove transition before resetting
+              container.style.transition = "none"; 
               index = totalItems - 1;
               container.style.transform = `translateX(-${index * itemWidth}px)`;
           }, 500);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
       clearInterval(autoScroll);
   }
 
-  startAutoScroll(); // Start auto-scroll initially
+  startAutoScroll(); 
 
   // Adjust item width on window resize
   window.addEventListener("resize", () => {
